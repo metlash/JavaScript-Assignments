@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Convert value in other ccurrency </h1>
+    <script>
+            
+       var dollar = window.prompt("Enter Dollar: ");
+           
+       displaylist(dollar);
+       
+       function displaylist(dollar){
+        
+       var rupee = dollar * 74.28;
+       
+       document.write("Rupees : " + rupee + "<br>");
+        
+       var yen = dollar * 109.14;
+       
+       document.write("Yen : " + yen + "<br>");
+       
+       var euro = dollar * 0.84;
+       
+       document.write("Euro : " + euro + "<br>");
+       
+       var pound = dollar * 0.72;
+
+       document.write("Pound sterling :" + Math.round(pound) );		
+           
+       }
+       
+    </script>
+    
+</body>
+</html>

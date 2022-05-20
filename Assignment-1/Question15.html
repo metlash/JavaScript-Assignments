@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Bubble Sort</h1>
+    <script>
+            
+        var a = [3,6,8,2,1,7,4,9];
+        
+        document.write("Array is : " + a + "<br>");
+        
+        bubbleSort(a);
+        
+        document.write("Array Sort using bubble sort is : " + a);
+        
+        function bubbleSort(a){
+    
+          for(var i = 0; i < arr.length; i++){
+            for(var j = 0; j < ( arr.length - i -1 ); j++){
+
+               if(a[j] > a[j+1]){
+                   var temp = a[j]
+                   a[j] = a[j + 1]
+                   a[j+1] = temp
+               }
+           }
+          }
+         }
+       
+    </script>
+    
+</body>
+</html>
+    
