@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Leap Years</title>
+  </head>
+
+  <body>
+
+<script>
+const isLeap = year => {
+   return year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
+};
+const nextNLeap = n => {
+   const arr = [];
+   let year = new Date().getFullYear()+1;
+   while(arr.length < n){
+      if(isLeap(year++)){
+         arr.push(year-1);
+      };
+   };
+   return arr;
+};
+
+
+function year(){
+
+  document.getElementById("results").innerHTML= nextNLeap(20)
+
+}
+console.log(nextNLeap(25));
+</script>
+
+<input type="button" value="Display the next 20 leap years" onclick="year();">
+<p id="results"></p>
+
+</body>
+</html>
