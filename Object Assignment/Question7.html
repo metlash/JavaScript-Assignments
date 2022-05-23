@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <script>
+	function person(fname,lname,age,skills,dateofbirth,address,married,profession)
+   	{
+    		 this.fname = fname;
+     		this.lname = lname;
+     		this.age=age;
+     		this.skills = skills;
+    		this.dateofbirth = dateofbirth;
+     		this.address = address;
+     		this.married = married;
+     		this.profession = profession;
+   	}
+	let person1=new person("Metlash","DM",23,["c"],"20/09/1998",{city:"coimbatore",pincode:"641009"},"false","jr analyst")
+	let person2=new person("Manoj","Mani",23,"HTML","07/05/1998",{city:"chennai",pincode:"610102"},"false","jr analyst")
+	print=function(person)
+	{
+   		console.log(person1);
+    		console.log(person2);
+	}
+
+</script>
+</body>
+</html>
